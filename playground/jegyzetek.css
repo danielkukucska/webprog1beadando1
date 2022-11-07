@@ -1,0 +1,141 @@
+@import url(kulso.css)
+
+
+/* Selectors */
+
+/* reláció 
+
+Leszármazott: sel1 sel2
+sel2-re találat, ha az tetszőleges szintű leszármazottja sel1-nek (gyerekelem, unokaelem stb.)
+
+Közvetlen leszármazott: sel1 > sel2
+sel2-re találat, ha az közvetlen leszármazottja sel1-nek (kizárólag gyerekelem). Emlékeztető: a table > tr kijelölőre nem lesz találat, mert ha nem használtunk sorcsoportokat, akkor egy plusz tbody elembe foglalja a táblázat összes sorát.
+
+Testvérelem: sel1 + sel2
+sel2-re találat, ha az közvetlen testvéreleme sel1-nek (ugyanazon a leszármazási szinten sel2 közvetlen követi sel1-et)
+
+Általános testvérelem: sel1 ~ sel2
+sel2-re találat, ha az testvéreleme sel1-nek (ugyanazon a leszármazási szinten sel2 követi sel1-et, nem muszáj közvetlenül)
+ */
+
+ /* 
+ Attribútumkijelölő
+Jelölőelemeken adott attribútum megléte, konkrét értéke vagy értékrészlete alapján szűrő szelektorok.
+
+Megadott attribútum, CSS2, formailag: [attribútumnév]
+Azon elemek jelentenek rá találatot, melyeken meg van adva a szögletes zárjelekben szerepeltetett attribútum (értéktől függetlenül, tehát ideális a logikai attribútumokra is).
+
+Pontos attribútumérték, CSS2, formailag: [anév = érték]
+A kijelölt elemnek van ilyen nevű attribútuma pontosan ezzel az értékkel.
+
+Attribútumérték önálló szóként, CSS2, formailag: [anév ~= érték]
+A kijelölt elemnek egy ilyen nevű attribútumának értékét szóközöknél szavakra bontva az egyik ez az érték (például a class és title attribútumok is kaphatnak szóközökkel tagolt értéket). Ha megadott érték a pontos értéke, akkor is találat rá.
+
+Attribútumérték kötőjellel tagolva, CSS2, formailag: [anév |= érték]
+A kijelölt elemnek egy ilyen nevű attribútumának pontosan ez az értéke, vagy ezzel és egy kötőjellel folytatva kezdődik. Például a [lang|=en] találat az en, en-GB, en-US stb. értékű lang attribútumot tartalmazó elemekre.
+
+Attribútumérték kezdés, CSS3, formailag: [anév ^= értékrészlet]
+A kijelölt elemnek egy ilyen nevű attribútumának értéke ezzel a szövegrészlettel kezdődik.
+
+Attribútumérték végződés, CSS3, formailag: [anév $= értékrészlet]
+A kijelölt elemnek egy ilyen nevű attribútumának értéke ezzel a szövegrészlettel végződik.
+
+Attribútumérték részlet, CSS3, formailag: [anév *= értékrészlet]
+A kijelölt elemnek egy ilyen nevű attribútumának értékében ez a szövegrészlet tetszőleges helyen megtalálható.
+ */
+
+ /* 
+ Pszeudoelemek
+Olyan tartalmi részletek, amelyek nem HTML-struktúrával vannak elkülönítve, de értelmezhetők önállóan. Megjegyzés: korábban ezek megadása a szabvány szerint két kettősponttal kezdődött (különválasztva a pszeudoosztályoktól), de mivel bizonyos böngészők csak egy kettősponttal dolgozták fel, így a szabvány is lekövette ezt a szokáselvű trendet, és elfogadott a szimpla kettőspontos forma.
+
+Első sor, CSS1, formailag: :first-line
+Ez a szelektor(részlet) a megcélzott elemek szövegtartalmának (az aktuális tördelést figyelembe véve) első sorát jelenti. Nem jelent viszont első táblázatsort vagy első listaelemet!
+
+Iniciálé, CSS1, formailag: :first-letter
+Ez a szelektor(részlet) a megcélzott elemek szövegtartalmának legelső karakterét jelenti.
+
+Beszúrás elé, CSS2, formailag: :before
+A kijelölt elem elé szúrhatunk be tartalmat a content CSS-tulajdonság segítségével.
+
+Beszúrás mögé, CSS2, formailag: :after
+A kijelölt elem után szúrhatunk be tartalmat a content CSS-tulajdonság segítségével.
+ */
+
+ /* 
+ Pszeudoosztályok
+Olyan jelölőelemekkel kapcsolatos speciális kikötések, amelyek a HTML struktúrában elfoglalt helyükre vonatkoznak, vagy bizonyos interakcióban részt venni képes elemek adott állapotait határozza meg. Általában egy meglévő kijelölőrészletet pontosítanak.
+
+Legelső gyerekelem, CSS2, formailag :first-child
+A kijelölő által meghatározott elemre vonatkozik, ha az szülőelemének a legelső gyerekeleme. Például a tr:first-child bármely táblázat, vagy annak bármelyik sorcsoportjában megadott első sort jelöli ki.
+
+Utolsó gyerekelem, CSS3, formailag: :last-child
+A kijelölő által meghatározott elemre vonatkozik, ha az szülőelemének az utolsó gyerekeleme. Például a tr:last-child bármely táblázat, vagy annak bármelyik sorcsoportjában megadott utolsó sort jelöli ki.
+
+Gyökérelem, CSS3, formailag: :root
+HTML esetén maga a html elem, de mivel XML-tartalmakra is alkalmazható CSS, azok esetében a tényleges (tetszőleges elnevezésű) gyökérelemet határozza meg. Bizonyos öröklődő tulajdonságok ilyen módon a kiindulóponttól tudják hatásukat kifejteni, amíg felül nem bírálja egy adott ágon egy beállítás.
+
+Az x-edik gyerekelem, CSS3, formailag: :nth-child( n )
+A kijelölt elem szülőelemének x-edik gyerekelemei; a zárójelen belül konkrét értékkel (az annyiadik), vagy xn+y formában paraméterezhető, ahol n helyére nullától fogja az egész számokat behelyettesíteni, illetve két kulcsszót is elfogad (odd és even) a páratlan és páros gyerekelemek kijelölésére. Példák: :nth-child(9) a kilencedik gyerekelemet, :nth-child(2n+1) és a :nth-child(odd) a páratlan sorszámú gyerekelemeket, :nth-child(2n) és a :nth-child(even) a páros sorszámú gyerekelemeket, :nth-child(n+3) az első két gyerekelem kivételével a maradékot fogja kijelölni. Pontosításként a későbbi -child és -of-type végű szelektorok közötti különbség úgy fogalmazható meg, hogy a p:nth-child(5) azt a p elemet jelöli ki, mely egyben az ötödik gyerekelem (függetlenül attól, hogy milyen testvérelemek előzték meg), míg a p:nth-of-type(5) az ötödik p gyerekelemet jelöli ki (négy p testvéreleme előzte meg).
+
+Az x-edik gyerekelem a végéről, CSS3, formailag: :nth-last-child( n )
+A kijelölt elem szülőelemének x-edik gyerekelemei, de a végéről visszafelé; paraméterezése mint az :nth-child() esetén.
+
+Az x-edik adott típusú gyerekelem, CSS3, formailag: :nth-of-type( n )
+A kijelölt elem szülőelemének x-edik ilyen típusú (itt mindenképp pontosításra szorul milyen elem) gyerekelemei; paraméterezése mint az :nth-child() esetén.
+
+Az x-edik adott típusú gyerekelem a végéről, CSS3, formailag: :nth-last-of-type( n )
+A kijelölt elem szülőelemének x-edik ilyen típusú gyerekelemei, de a végéről visszafelé; paraméterezése mint az :nth-child() esetén.
+
+Legelső gyerekelem előfordulás, CSS3, formailag: :first-of-type
+A kijelölt elem szülőelemének első ilyen típusú gyerekeleme.
+
+Utolsó gyerekelem előfordulás, CSS3, formailag: :last-of-type
+A kijelölt elem szülőelemének utolsó ilyen típusú gyerekeleme.
+
+Kizárólagos gyerekelem, CSS3, formailag: :only-child
+A kijelölt elem szülőelemének egyetlen gyerekeleme.
+
+Egyedi gyerekelem, CSS3, formailag: :only-of-type
+A kijelölt elem szülőelemének egyetlen ilyen típusú gyerekeleme, lehet testvéreleme, de csak a kijelölt elemtől eltérő.
+
+Aktiválható hivatkozás, CSS1, formailag: :link
+A kijelölt (legtöbbször a) elem, mely ugrópontként aktiválható (erősebbé teszi a szelektort, mint ha pusztán az elemet jelölnénk ki).
+
+Meglátogatott hivatkozás, CSS1, formailag: :visited
+A kijelölt (legtöbbször a) elem meglátogatott állapotában.
+
+Fókuszban, CSS1&2, formailag: :focus
+A kijelölt elemen van a billentyűzet fókusz (a elem, űrlapelemek, vagy tabindex attribútum hatására fókuszba hozható elemek).
+
+Egér felette, CSS1&2, formailag: :hover
+A kijelölt elem felett tartózkodik az egérkurzor.
+
+Hivatkozás aktiválás közben, CSS1&2, formailag: :active
+A kijelölt (legtöbbször a) elem épp aktiválás állapotában (egérgomb, vagy aktiváló billentyű benyomva, de még nem felengedve).
+
+URL részlet, CSS3, formailag: :target
+A kijelölt elem id tulajdonsága megegyezik az oldal webcímében a megcélzott #részletazonosítóval.
+
+Nyelvmegadás, CSS2, formailag: :lang(érték)
+A kijelölt elem lang attribútuma ezzel az értékkel bír (ugyanaz, mint [lang=érték]).
+
+Bejelölve, CSS3, formailag: :checked
+A kijelölt (radio/checkbox típus input) elem kiválasztott állapotban van.
+
+Kijelölő tagadás, CSS3, formailag: :not(kijelölő)
+A zárójelben lévő szelektor tagadása (nem szerepelhetnek benne pszeudoelemek, és újabb :not()). Megjegyzés: magában a :not(p) ugyan a nem p elemekre lesz találat, de így a html és a body is megfelel, és ha öröklődő tulajdonságot adunk meg, az még eljuthat alapértelmezésként a p elemekhez is – ilyenkor érdemes tovább finomítani a kijelölőt (például body :not(p)).
+
+Üres elem, CSS3, formailag: :empty
+A kijelölt elemnek sem gyerekeleme, sem közbezárt tartalma nincs. Önmagában használva az összes önálló elem is találat rá.
+
+Engedélyezett, CSS3, formailag: :enabled
+A kijelölt elem engedélyezett állapotban van (:not(:disabled) illetve :not([disabled])).
+
+Kikapcsolt, CSS3, formailag: :disabled
+A kijelölt elem kikapcsolt állapotban van ([disabled]).
+ */
+
+ /* 
+ teszteléshez:
+ *:hover { outline: 1px solid #f00; }
+ */
