@@ -14,7 +14,7 @@ const getHtml = (relPath, altText) => `<!DOCTYPE html>
     <link
       rel="icon"
       type="image/x-icon"
-      href="webprog1beadando1/assets/images/favicon-32x32.png"
+      href="/webprog1beadando1/assets/images/favicon-32x32.png"
     />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
@@ -28,7 +28,7 @@ const getHtml = (relPath, altText) => `<!DOCTYPE html>
       crossorigin="anonymous"
       defer
     ></script>
-    <link rel="stylesheet" href="webprog1beadando1/assets/styles/main.css" />
+    <link rel="stylesheet" href="/webprog1beadando1/assets/styles/main.css" />
   </head>
 
   <body class="d-flex flex-column justify-content-between gap-4 min-vh-100">
