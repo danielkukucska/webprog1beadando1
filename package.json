@@ -1,0 +1,22 @@
+{
+  "name": "sqabsb_beadando_i",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pretty": "prettier --write \"./**/*.{css,html}\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielkukucska/webprog1beadando1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielkukucska/webprog1beadando1/issues"
+  },
+  "homepage": "https://github.com/danielkukucska/webprog1beadando1#readme",
+  "devDependencies": {
+    "prettier": "^2.7.1"
+  }
+}
