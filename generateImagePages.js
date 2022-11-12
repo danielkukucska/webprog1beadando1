@@ -14,7 +14,7 @@ const getHtml = (relPath, altText) => `<!DOCTYPE html>
     <link
       rel="icon"
       type="image/x-icon"
-      href="/assets/images/favicon-32x32.png"
+      href="webprog1beadando1/assets/images/favicon-32x32.png"
     />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
@@ -28,7 +28,7 @@ const getHtml = (relPath, altText) => `<!DOCTYPE html>
       crossorigin="anonymous"
       defer
     ></script>
-    <link rel="stylesheet" href="/assets/styles/main.css" />
+    <link rel="stylesheet" href="webprog1beadando1/assets/styles/main.css" />
   </head>
 
   <body class="d-flex flex-column justify-content-between gap-4 min-vh-100">
@@ -59,7 +59,7 @@ const getHtml = (relPath, altText) => `<!DOCTYPE html>
             <div class="offcanvas-body">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a href="/" class="nav-link">
+                  <a href="webprog1beadando1/" class="nav-link">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="1em"
@@ -76,7 +76,7 @@ const getHtml = (relPath, altText) => `<!DOCTYPE html>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="/pages/resume.html" class="nav-link">
+                  <a href="webprog1beadando1/pages/resume.html" class="nav-link">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="1em"
@@ -94,7 +94,7 @@ const getHtml = (relPath, altText) => `<!DOCTYPE html>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="/pages/subjects.html" class="nav-link">
+                  <a href="webprog1beadando1/pages/subjects.html" class="nav-link">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="1em"
@@ -118,7 +118,7 @@ const getHtml = (relPath, altText) => `<!DOCTYPE html>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="/pages/calendar.html" class="nav-link">
+                  <a href="webprog1beadando1/pages/calendar.html" class="nav-link">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="1em"
@@ -138,7 +138,7 @@ const getHtml = (relPath, altText) => `<!DOCTYPE html>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="/pages/gallery" class="nav-link">
+                  <a href="webprog1beadando1/pages/gallery" class="nav-link">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="1em"
@@ -156,7 +156,7 @@ const getHtml = (relPath, altText) => `<!DOCTYPE html>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="/pages/videos.html" class="nav-link">
+                  <a href="webprog1beadando1/pages/videos.html" class="nav-link">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="1em"
@@ -176,7 +176,7 @@ const getHtml = (relPath, altText) => `<!DOCTYPE html>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="/pages/chess.html" class="nav-link">
+                  <a href="webprog1beadando1/pages/chess.html" class="nav-link">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="1em"
