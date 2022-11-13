@@ -1,8 +1,8 @@
 {
-  "name": "sqabsb_beadando_i",
+  "name": "sqabsb_beadando_1",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Web development - first assessment",
+  "main": "index.html",
   "scripts": {
     "pretty": "prettier --write \"./**/*.{css,html}\""
   },
