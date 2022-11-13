@@ -24,7 +24,7 @@ npm install
 npm run pretty
 ```
 ## Elérés
-[Forráskód](https://github.com/danielkukucska/webprog1beadan)
+[Forráskód](https://github.com/danielkukucska/webprog1beadando1)
 \
 [Live demo](https://danielkukucska.github.io/webprog1beadando1/)
 \

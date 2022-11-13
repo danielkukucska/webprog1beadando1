@@ -35,7 +35,7 @@ const getHtml = (relPath, altText) => `<!DOCTYPE html>
     <header class="header fixed-top">
       <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container-fluid">
-          <a href="#" class="navbar-brand">Daniel Kukucska</a>
+          <a href="/webprog1beadando1" class="navbar-brand">Daniel Kukucska</a>
           <button
             class="btn btn-dark navbar-toggler border-3 px-2"
             type="button"
@@ -137,24 +137,30 @@ const getHtml = (relPath, altText) => `<!DOCTYPE html>
                     Calendar
                   </a>
                 </li>
-                <li class="nav-item">
-                  <a href="/webprog1beadando1/pages/gallery" class="nav-link">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="1em"
-                      height="1em"
-                      fill="currentColor"
-                      class="bi bi-images d-md-block"
-                      viewBox="0 0 16 16"
-                    >
-                      <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
-                      <path
-                        d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2zM14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1zM2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1h-10z"
-                      />
-                    </svg>
-                    Gallery
-                  </a>
-                </li>
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle active" href="/webprog1beadando1/pages/gallery" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="1em"
+      height="1em"
+      fill="currentColor"
+      class="bi bi-images d-md-block"
+      viewBox="0 0 16 16"
+    >
+      <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+      <path
+        d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2zM14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1zM2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1h-10z"
+      />
+    </svg>
+      Gallery
+    </a>
+    <ul class="dropdown-menu dropdown-menu-dark">
+      <li><a class="dropdown-item" href="/webprog1beadando1/pages/gallery/PeterGriffin">Peter Griffin</a></li>
+      <li><a class="dropdown-item" href="/webprog1beadando1/pages/gallery/StewieGriffin">Stewie Griffin</a></li>
+      <li><hr class="dropdown-divider"></li>
+      <li><a class="dropdown-item" href="/webprog1beadando1/pages/gallery">All</a></li>
+    </ul>
+  </li>
                 <li class="nav-item">
                   <a href="/webprog1beadando1/pages/videos.html" class="nav-link">
                     <svg
