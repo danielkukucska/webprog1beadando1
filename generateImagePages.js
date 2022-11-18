@@ -8,7 +8,7 @@ const getHtml = (relPath, altText) => `<!DOCTYPE html>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="author" content="Kukucska Dániel" />
+    <meta name="author" content="Daniel Kukucska" />
     <meta name="description" content="Webdevelopment I. - First assessment" />
     <title>Gallery</title>
     <link

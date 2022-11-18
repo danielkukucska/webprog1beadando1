@@ -34,7 +34,6 @@
 }
 
 .pagination-nav > label:hover {
-    /* background-color: rgba(var(--bs-danger-color), 0.7); */
     background-color: var(--bs-danger-color);
     opacity: 0.8;
     color: white;
@@ -63,7 +62,6 @@
 
 input[id^='page_']:checked + label {
     background-color: var(--bs-danger-color);
-    border-color: var(--bs-danger-color);
     color: white;
 }
 

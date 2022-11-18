@@ -1,4 +1,4 @@
-# Kukucska Dániel (sqabsb)
+# Daniel Kukucska (sqabsb)
 
 Webprogramozás%20I. tantárgy első beadandó
 
