@@ -11,7 +11,7 @@
     <link
       rel="icon"
       type="image/x-icon"
-      href="/webprog1beadando1/assets/images/favicon-32x32.png"
+      href="/webprog1beadando1/public/images/favicon-32x32.png"
     />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
@@ -25,229 +25,123 @@
       crossorigin="anonymous"
       defer
     ></script>
-    <link rel="stylesheet" href="/webprog1beadando1/assets/styles/main.css" />
+    <link rel="stylesheet" href="/webprog1beadando1/public/styles/main.css" />
   </head>
 
   <body class="d-flex flex-column justify-content-between gap-4 min-vh-100">
-    <header class="header fixed-top">
-      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a href="/webprog1beadando1" class="navbar-brand">Daniel Kukucska</a>
-          <button
-            class="btn btn-dark navbar-toggler border-3 px-2"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvas"
-            aria-controls="offcanvas"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="offcanvas offcanvas-start-md bg-dark d-flex align-items-md-end"
-            tabindex="-1"
-            id="offcanvas"
-            aria-labelledby="offcanvasLabel"
-          >
-            <div class="offcanvas-header d-flex d-md-none">
-              <h5 class="offcanvas-title text-white" id="offcanvasLabel">
-                Daniel Kukucska
-              </h5>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a href="/webprog1beadando1/" class="nav-link">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="1em"
-                      height="1em"
-                      fill="currentColor"
-                      class="bi bi-house-door d-md-block"
-                      viewBox="0 0 16 16"
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a href="/webprog1beadando1" class="navbar-brand">Daniel Kukucska</a>
+        <button
+          class="btn btn-dark navbar-toggler border-3 px-2"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvas"
+          aria-controls="offcanvas"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-start-md bg-dark d-flex align-items-md-end"
+          tabindex="-1"
+          id="offcanvas"
+          aria-labelledby="offcanvasLabel"
+        >
+          <div class="offcanvas-header d-flex d-md-none">
+            <h5 class="offcanvas-title text-white" id="offcanvasLabel">
+              Daniel Kukucska
+            </h5>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="/webprog1beadando1/" class="nav-link">
+                  <img class="d-md-block" src="/webprog1beadando1/public/images/icons/home.svg" alt="Home icon">
+                  Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="/webprog1beadando1/pages/resume.html" class="nav-link">
+                  <img class="d-md-block" src="/webprog1beadando1/public/images/icons/resume.svg" alt="Resume icon">
+                  Resume
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="/webprog1beadando1/pages/subjects.html"
+                  class="nav-link"
+                >
+                  <img class="d-md-block" src="/webprog1beadando1/public/images/icons/subjects.svg" alt="Subjects icon">
+                  Subjects
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="/webprog1beadando1/pages/calendar.html"
+                  class="nav-link"
+                >
+                <img class="d-md-block" src="/webprog1beadando1/public/images/icons/calendar.svg" alt="Calendar icon">
+                  Calendar
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle active"
+                  href="/webprog1beadando1/pages/gallery"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                 <img class="d-md-block" src="/webprog1beadando1/public/images/icons/gallery.svg" alt="Gallery icon">
+                  Gallery
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="/webprog1beadando1/pages/gallery/PeterGriffin"
+                      >Peter Griffin</a
                     >
-                      <path
-                        d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"
-                      />
-                    </svg>
-                    Home
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a
-                    href="/webprog1beadando1/pages/resume.html"
-                    class="nav-link"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="1em"
-                      height="1em"
-                      fill="currentColor"
-                      class="bi bi-file-earmark-person d-md-block"
-                      viewBox="0 0 16 16"
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="/webprog1beadando1/pages/gallery/StewieGriffin"
+                      >Stewie Griffin</a
                     >
-                      <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-                      <path
-                        d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2v9.255S12 12 8 12s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h5.5v2z"
-                      />
-                    </svg>
-                    Resume
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a
-                    href="/webprog1beadando1/pages/subjects.html"
-                    class="nav-link"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="1em"
-                      height="1em"
-                      fill="currentColor"
-                      class="bi bi-journal-code d-md-block"
-                      viewBox="0 0 16 16"
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="/webprog1beadando1/pages/gallery"
+                      >All</a
                     >
-                      <path
-                        fill-rule="evenodd"
-                        d="M8.646 5.646a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 8 8.646 6.354a.5.5 0 0 1 0-.708zm-1.292 0a.5.5 0 0 0-.708 0l-2 2a.5.5 0 0 0 0 .708l2 2a.5.5 0 0 0 .708-.708L5.707 8l1.647-1.646a.5.5 0 0 0 0-.708z"
-                      />
-                      <path
-                        d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"
-                      />
-                      <path
-                        d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"
-                      />
-                    </svg>
-                    Subjects
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a
-                    href="/webprog1beadando1/pages/calendar.html"
-                    class="nav-link"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="1em"
-                      height="1em"
-                      fill="currentColor"
-                      class="bi bi-calendar-date d-md-block"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        d="M6.445 11.688V6.354h-.633A12.6 12.6 0 0 0 4.5 7.16v.695c.375-.257.969-.62 1.258-.777h.012v4.61h.675zm1.188-1.305c.047.64.594 1.406 1.703 1.406 1.258 0 2-1.066 2-2.871 0-1.934-.781-2.668-1.953-2.668-.926 0-1.797.672-1.797 1.809 0 1.16.824 1.77 1.676 1.77.746 0 1.23-.376 1.383-.79h.027c-.004 1.316-.461 2.164-1.305 2.164-.664 0-1.008-.45-1.05-.82h-.684zm2.953-2.317c0 .696-.559 1.18-1.184 1.18-.601 0-1.144-.383-1.144-1.2 0-.823.582-1.21 1.168-1.21.633 0 1.16.398 1.16 1.23z"
-                      />
-                      <path
-                        d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"
-                      />
-                    </svg>
-                    Calendar
-                  </a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle active"
-                    href="/webprog1beadando1/pages/gallery"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="1em"
-                      height="1em"
-                      fill="currentColor"
-                      class="bi bi-images d-md-block"
-                      viewBox="0 0 16 16"
-                    >
-                      <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
-                      <path
-                        d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2zM14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1zM2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1h-10z"
-                      />
-                    </svg>
-                    Gallery
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-dark">
-                    <li>
-                      <a
-                        class="dropdown-item"
-                        href="/webprog1beadando1/pages/gallery/PeterGriffin"
-                        >Peter Griffin</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="dropdown-item"
-                        href="/webprog1beadando1/pages/gallery/StewieGriffin"
-                        >Stewie Griffin</a
-                      >
-                    </li>
-                    <li><hr class="dropdown-divider" /></li>
-                    <li>
-                      <a
-                        class="dropdown-item"
-                        href="/webprog1beadando1/pages/gallery"
-                        >All</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a
-                    href="/webprog1beadando1/pages/videos.html"
-                    class="nav-link"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="1em"
-                      height="1em"
-                      fill="currentColor"
-                      class="bi bi-collection-play d-md-block"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        d="M2 3a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 0-1h-11A.5.5 0 0 0 2 3zm2-2a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7A.5.5 0 0 0 4 1zm2.765 5.576A.5.5 0 0 0 6 7v5a.5.5 0 0 0 .765.424l4-2.5a.5.5 0 0 0 0-.848l-4-2.5z"
-                      />
-                      <path
-                        d="M1.5 14.5A1.5 1.5 0 0 1 0 13V6a1.5 1.5 0 0 1 1.5-1.5h13A1.5 1.5 0 0 1 16 6v7a1.5 1.5 0 0 1-1.5 1.5h-13zm13-1a.5.5 0 0 0 .5-.5V6a.5.5 0 0 0-.5-.5h-13A.5.5 0 0 0 1 6v7a.5.5 0 0 0 .5.5h13z"
-                      />
-                    </svg>
-                    Videos
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a
-                    href="/webprog1beadando1/pages/chess.html"
-                    class="nav-link"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="1em"
-                      height="1em"
-                      fill="currentColor"
-                      class="bi bi-controller d-md-block"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        d="M11.5 6.027a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm2.5-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm-6.5-3h1v1h1v1h-1v1h-1v-1h-1v-1h1v-1z"
-                      />
-                      <path
-                        d="M3.051 3.26a.5.5 0 0 1 .354-.613l1.932-.518a.5.5 0 0 1 .62.39c.655-.079 1.35-.117 2.043-.117.72 0 1.443.041 2.12.126a.5.5 0 0 1 .622-.399l1.932.518a.5.5 0 0 1 .306.729c.14.09.266.19.373.297.408.408.78 1.05 1.095 1.772.32.733.599 1.591.805 2.466.206.875.34 1.78.364 2.606.024.816-.059 1.602-.328 2.21a1.42 1.42 0 0 1-1.445.83c-.636-.067-1.115-.394-1.513-.773-.245-.232-.496-.526-.739-.808-.126-.148-.25-.292-.368-.423-.728-.804-1.597-1.527-3.224-1.527-1.627 0-2.496.723-3.224 1.527-.119.131-.242.275-.368.423-.243.282-.494.575-.739.808-.398.38-.877.706-1.513.773a1.42 1.42 0 0 1-1.445-.83c-.27-.608-.352-1.395-.329-2.21.024-.826.16-1.73.365-2.606.206-.875.486-1.733.805-2.466.315-.722.687-1.364 1.094-1.772a2.34 2.34 0 0 1 .433-.335.504.504 0 0 1-.028-.079zm2.036.412c-.877.185-1.469.443-1.733.708-.276.276-.587.783-.885 1.465a13.748 13.748 0 0 0-.748 2.295 12.351 12.351 0 0 0-.339 2.406c-.022.755.062 1.368.243 1.776a.42.42 0 0 0 .426.24c.327-.034.61-.199.929-.502.212-.202.4-.423.615-.674.133-.156.276-.323.44-.504C4.861 9.969 5.978 9.027 8 9.027s3.139.942 3.965 1.855c.164.181.307.348.44.504.214.251.403.472.615.674.318.303.601.468.929.503a.42.42 0 0 0 .426-.241c.18-.408.265-1.02.243-1.776a12.354 12.354 0 0 0-.339-2.406 13.753 13.753 0 0 0-.748-2.295c-.298-.682-.61-1.19-.885-1.465-.264-.265-.856-.523-1.733-.708-.85-.179-1.877-.27-2.913-.27-1.036 0-2.063.091-2.913.27z"
-                      />
-                    </svg>
-                    Chess
-                  </a>
-                </li>
-              </ul>
-            </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="/webprog1beadando1/pages/videos.html" class="nav-link">
+                  <img class="d-md-block" src="/webprog1beadando1/public/images/icons/videos.svg" alt="Videos icon">
+                  Videos
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="/webprog1beadando1/pages/chess.html" class="nav-link">
+                 <img class="d-md-block" src="/webprog1beadando1/public/images/icons/chess.svg" alt="Chess icon">
+                  Chess
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
 
     <main>
       <div class="container my-3 p-0 rounded-3 border shadow-md">
         <img
-          src="/webprog1beadando1/assets/images/gallery/StewieGriffin/bazooka.jpg"
+          src="/webprog1beadando1/public/images/gallery/StewieGriffin/bazooka.jpg"
           class="w-100 shadow-1-strong rounded"
           alt="Stewie Griffin with bazooka"
         />
@@ -265,21 +159,10 @@
         <li class="ms-3">
           <a
             class="text-muted"
-            href="mailto:daniel.kukucska.txt@gmail.com?Subject=Webprogramozás I."
+            href="mailto:daniel.kukucska.txt@gmail.com?Subject=Webprogramozás%20I."
             target="_blank"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              class="bi bi-envelope"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"
-              />
-            </svg>
+                         <img src="/webprog1beadando1/public/images/icons/envelope.svg" alt="Envelope icon">
           </a>
         </li>
         <li class="ms-3">
@@ -288,18 +171,7 @@
             href="https://github.com/danielkukucska"
             target="_blank"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              class="bi bi-github"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
-              />
-            </svg>
+            <img src="/webprog1beadando1/public/images/icons/github.svg" alt="GitHub icon">
           </a>
         </li>
       </ul>

@@ -14,7 +14,7 @@ const getHtml = (relPath, altText) => `<!DOCTYPE html>
     <link
       rel="icon"
       type="image/x-icon"
-      href="/webprog1beadando1/assets/images/favicon-32x32.png"
+      href="/webprog1beadando1/public/images/favicon-32x32.png"
     />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
@@ -28,12 +28,11 @@ const getHtml = (relPath, altText) => `<!DOCTYPE html>
       crossorigin="anonymous"
       defer
     ></script>
-    <link rel="stylesheet" href="/webprog1beadando1/assets/styles/main.css" />
+    <link rel="stylesheet" href="/webprog1beadando1/public/styles/main.css" />
   </head>
 
   <body class="d-flex flex-column justify-content-between gap-4 min-vh-100">
-    <header class="header fixed-top">
-      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+          <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
           <a href="/webprog1beadando1" class="navbar-brand">Daniel Kukucska</a>
           <button
@@ -206,7 +205,6 @@ const getHtml = (relPath, altText) => `<!DOCTYPE html>
           </div>
         </div>
       </nav>
-    </header>
 
     <main>
       <div class="container my-3 p-0 rounded-3 border shadow-md">
@@ -229,21 +227,10 @@ const getHtml = (relPath, altText) => `<!DOCTYPE html>
         <li class="ms-3">
           <a
             class="text-muted"
-            href="mailto:daniel.kukucska.txt@gmail.com?Subject=Webprogramozás I."
+            href="mailto:daniel.kukucska.txt@gmail.com?Subject=Webprogramozás%20I."
             target="_blank"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              class="bi bi-envelope"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"
-              />
-            </svg>
+                         <img src="/webprog1beadando1/public/images/icons/envelope.svg" alt="Envelope icon">
           </a>
         </li>
         <li class="ms-3">
@@ -252,18 +239,7 @@ const getHtml = (relPath, altText) => `<!DOCTYPE html>
             href="https://github.com/danielkukucska"
             target="_blank"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              class="bi bi-github"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
-              />
-            </svg>
+            <img src="/webprog1beadando1/public/images/icons/github.svg" alt="GitHub icon">
           </a>
         </li>
       </ul>
@@ -272,33 +248,33 @@ const getHtml = (relPath, altText) => `<!DOCTYPE html>
 </html>
 `
 const images = [
-    {filePath: "./pages/gallery/PeterGriffin/americanHat.html",relPath: "/webprog1beadando1/assets/images/gallery/PeterGriffin/american-hat.jpg", altText: "Peter Griffin in an american hat"},
-    {filePath: "./pages/gallery/PeterGriffin/backWardsBaseballHat.html",relPath: "/webprog1beadando1/assets/images/gallery/PeterGriffin/backwaards-baseball-hat.jpg", altText: "Peter Griffin in baseball hat"},
-    {filePath: "./pages/gallery/PeterGriffin/baseballHat.html",relPath: "/webprog1beadando1/assets/images/gallery/PeterGriffin/baseball-hat.jpg", altText: "Peter Griffin in baseball hat"},
-    {filePath: "./pages/gallery/PeterGriffin/cactusHat.html",relPath: "/webprog1beadando1/assets/images/gallery/PeterGriffin/cactus-hat.jpg", altText: "Peter Griffin in cactus hat"},
-    {filePath: "./pages/gallery/PeterGriffin/chimneyPotHat.html",relPath: "/webprog1beadando1/assets/images/gallery/PeterGriffin/chimney-pot-hat.jpg", altText: "Peter Griffin in chimney-pot hat"},
-    {filePath: "./pages/gallery/PeterGriffin/cowBoyHat1.html",relPath: "/webprog1beadando1/assets/images/gallery/PeterGriffin/cowboy-hat1.png", altText: "Peter Griffin in cowboy hat"},
-    {filePath: "./pages/gallery/PeterGriffin/cowBoyHat2.html",relPath: "/webprog1beadando1/assets/images/gallery/PeterGriffin/cowboy-hat2.jpg", altText: "Peter Griffin in cowboy hat"},
-    {filePath: "./pages/gallery/PeterGriffin/cowBoyHat3.html",relPath: "/webprog1beadando1/assets/images/gallery/PeterGriffin/cowboy-hat3.jpg", altText: "Peter Griffin in cowboy hat"},
-    {filePath: "./pages/gallery/PeterGriffin/cowBoyHat4.html",relPath: "/webprog1beadando1/assets/images/gallery/PeterGriffin/cowboy-hat4.jpg", altText: "Peter Griffin in cowboy hat"},
-    {filePath: "./pages/gallery/PeterGriffin/extraLongChimneyPotHat.html",relPath: "/webprog1beadando1/assets/images/gallery/PeterGriffin/extra-long-chimney-pot-hat.jpg", altText: "Peter Griffin in  chimney-pot hat"},
-    {filePath: "./pages/gallery/PeterGriffin/huntingHat.html",relPath: "/webprog1beadando1/assets/images/gallery/PeterGriffin/hunting-hat.jpg", altText: "Peter Griffin in hunting hat"},
-    {filePath: "./pages/gallery/PeterGriffin/marineHat.html",relPath: "/webprog1beadando1/assets/images/gallery/PeterGriffin/marine-hat.jpg", altText: "Peter Griffin in marine hat"},
-    {filePath: "./pages/gallery/PeterGriffin/pirateHat.html",relPath: "/webprog1beadando1/assets/images/gallery/PeterGriffin/pirate-hat.jpg", altText: "Peter Griffin in pirate hat"},
-    {filePath: "./pages/gallery/PeterGriffin/sortingHat.html",relPath: "/webprog1beadando1/assets/images/gallery/PeterGriffin/sorting-hat.jpg", altText: "Peter Griffin in sorting hat"},
-    {filePath: "./pages/gallery/PeterGriffin/yellowHat.html",relPath: "/webprog1beadando1/assets/images/gallery/PeterGriffin/yellow-headgear.jpg", altText: "Peter Griffin in yellow hat"},
+    {filePath: "./pages/gallery/PeterGriffin/americanHat.html",relPath: "/webprog1beadando1/public/images/gallery/PeterGriffin/american-hat.jpg", altText: "Peter Griffin in an american hat"},
+    {filePath: "./pages/gallery/PeterGriffin/backWardsBaseballHat.html",relPath: "/webprog1beadando1/public/images/gallery/PeterGriffin/backwaards-baseball-hat.jpg", altText: "Peter Griffin in baseball hat"},
+    {filePath: "./pages/gallery/PeterGriffin/baseballHat.html",relPath: "/webprog1beadando1/public/images/gallery/PeterGriffin/baseball-hat.jpg", altText: "Peter Griffin in baseball hat"},
+    {filePath: "./pages/gallery/PeterGriffin/cactusHat.html",relPath: "/webprog1beadando1/public/images/gallery/PeterGriffin/cactus-hat.jpg", altText: "Peter Griffin in cactus hat"},
+    {filePath: "./pages/gallery/PeterGriffin/chimneyPotHat.html",relPath: "/webprog1beadando1/public/images/gallery/PeterGriffin/chimney-pot-hat.jpg", altText: "Peter Griffin in chimney-pot hat"},
+    {filePath: "./pages/gallery/PeterGriffin/cowBoyHat1.html",relPath: "/webprog1beadando1/public/images/gallery/PeterGriffin/cowboy-hat1.png", altText: "Peter Griffin in cowboy hat"},
+    {filePath: "./pages/gallery/PeterGriffin/cowBoyHat2.html",relPath: "/webprog1beadando1/public/images/gallery/PeterGriffin/cowboy-hat2.jpg", altText: "Peter Griffin in cowboy hat"},
+    {filePath: "./pages/gallery/PeterGriffin/cowBoyHat3.html",relPath: "/webprog1beadando1/public/images/gallery/PeterGriffin/cowboy-hat3.jpg", altText: "Peter Griffin in cowboy hat"},
+    {filePath: "./pages/gallery/PeterGriffin/cowBoyHat4.html",relPath: "/webprog1beadando1/public/images/gallery/PeterGriffin/cowboy-hat4.jpg", altText: "Peter Griffin in cowboy hat"},
+    {filePath: "./pages/gallery/PeterGriffin/extraLongChimneyPotHat.html",relPath: "/webprog1beadando1/public/images/gallery/PeterGriffin/extra-long-chimney-pot-hat.jpg", altText: "Peter Griffin in  chimney-pot hat"},
+    {filePath: "./pages/gallery/PeterGriffin/huntingHat.html",relPath: "/webprog1beadando1/public/images/gallery/PeterGriffin/hunting-hat.jpg", altText: "Peter Griffin in hunting hat"},
+    {filePath: "./pages/gallery/PeterGriffin/marineHat.html",relPath: "/webprog1beadando1/public/images/gallery/PeterGriffin/marine-hat.jpg", altText: "Peter Griffin in marine hat"},
+    {filePath: "./pages/gallery/PeterGriffin/pirateHat.html",relPath: "/webprog1beadando1/public/images/gallery/PeterGriffin/pirate-hat.jpg", altText: "Peter Griffin in pirate hat"},
+    {filePath: "./pages/gallery/PeterGriffin/sortingHat.html",relPath: "/webprog1beadando1/public/images/gallery/PeterGriffin/sorting-hat.jpg", altText: "Peter Griffin in sorting hat"},
+    {filePath: "./pages/gallery/PeterGriffin/yellowHat.html",relPath: "/webprog1beadando1/public/images/gallery/PeterGriffin/yellow-headgear.jpg", altText: "Peter Griffin in yellow hat"},
 
-    {filePath: "./pages/gallery/StewieGriffin/arrow.html",relPath: "/webprog1beadando1/assets/images/gallery/StewieGriffin/arrow.jpg", altText: "Stewie Griffin with arrow"},
-    {filePath: "./pages/gallery/StewieGriffin/bazooka.html",relPath: "/webprog1beadando1/assets/images/gallery/StewieGriffin/bazooka.jpg", altText: "Stewie Griffin with bazooka"},
-    {filePath: "./pages/gallery/StewieGriffin/desertEagle.html",relPath: "/webprog1beadando1/assets/images/gallery/StewieGriffin/desert-eagle.jpg", altText: "Stewie Griffin with desert eagle"},
-    {filePath: "./pages/gallery/StewieGriffin/flame.html",relPath: "/webprog1beadando1/assets/images/gallery/StewieGriffin/flame.webp", altText: "Stewie Griffin with flame"},
-    {filePath: "./pages/gallery/StewieGriffin/machineGun.html",relPath: "/webprog1beadando1/assets/images/gallery/StewieGriffin/machine-gun.webp", altText: "Stewie Griffin with machine gun"},
-    {filePath: "./pages/gallery/StewieGriffin/miniUzi.html",relPath: "/webprog1beadando1/assets/images/gallery/StewieGriffin/mini-uzi.jpg", altText: "Stewie Griffin with mini uzi"},
-    {filePath: "./pages/gallery/StewieGriffin/neuroBlaster.html",relPath: "/webprog1beadando1/assets/images/gallery/StewieGriffin/neuro-blaster.jpg", altText: "Stewie Griffin with neuro blaster"},
-    {filePath: "./pages/gallery/StewieGriffin/revolver.html",relPath: "/webprog1beadando1/assets/images/gallery/StewieGriffin/revolver.jpg", altText: "Stewie Griffin with revolver"},
-    {filePath: "./pages/gallery/StewieGriffin/sandwich.html",relPath: "/webprog1beadando1/assets/images/gallery/StewieGriffin/sandwich-gun.jpg", altText: "Stewie Griffin with sandwich gun"},
-    {filePath: "./pages/gallery/StewieGriffin/shotgun.html",relPath: "/webprog1beadando1/assets/images/gallery/StewieGriffin/shotgun.jpg", altText: "Stewie Griffin with shotgun"},
-    {filePath: "./pages/gallery/StewieGriffin/sniper.html",relPath: "/webprog1beadando1/assets/images/gallery/StewieGriffin/sniper.jpg", altText: "Stewie Griffin with sniper"},
+    {filePath: "./pages/gallery/StewieGriffin/arrow.html",relPath: "/webprog1beadando1/public/images/gallery/StewieGriffin/arrow.jpg", altText: "Stewie Griffin with arrow"},
+    {filePath: "./pages/gallery/StewieGriffin/bazooka.html",relPath: "/webprog1beadando1/public/images/gallery/StewieGriffin/bazooka.jpg", altText: "Stewie Griffin with bazooka"},
+    {filePath: "./pages/gallery/StewieGriffin/desertEagle.html",relPath: "/webprog1beadando1/public/images/gallery/StewieGriffin/desert-eagle.jpg", altText: "Stewie Griffin with desert eagle"},
+    {filePath: "./pages/gallery/StewieGriffin/flame.html",relPath: "/webprog1beadando1/public/images/gallery/StewieGriffin/flame.webp", altText: "Stewie Griffin with flame"},
+    {filePath: "./pages/gallery/StewieGriffin/machineGun.html",relPath: "/webprog1beadando1/public/images/gallery/StewieGriffin/machine-gun.webp", altText: "Stewie Griffin with machine gun"},
+    {filePath: "./pages/gallery/StewieGriffin/miniUzi.html",relPath: "/webprog1beadando1/public/images/gallery/StewieGriffin/mini-uzi.jpg", altText: "Stewie Griffin with mini uzi"},
+    {filePath: "./pages/gallery/StewieGriffin/neuroBlaster.html",relPath: "/webprog1beadando1/public/images/gallery/StewieGriffin/neuro-blaster.jpg", altText: "Stewie Griffin with neuro blaster"},
+    {filePath: "./pages/gallery/StewieGriffin/revolver.html",relPath: "/webprog1beadando1/public/images/gallery/StewieGriffin/revolver.jpg", altText: "Stewie Griffin with revolver"},
+    {filePath: "./pages/gallery/StewieGriffin/sandwich.html",relPath: "/webprog1beadando1/public/images/gallery/StewieGriffin/sandwich-gun.jpg", altText: "Stewie Griffin with sandwich gun"},
+    {filePath: "./pages/gallery/StewieGriffin/shotgun.html",relPath: "/webprog1beadando1/public/images/gallery/StewieGriffin/shotgun.jpg", altText: "Stewie Griffin with shotgun"},
+    {filePath: "./pages/gallery/StewieGriffin/sniper.html",relPath: "/webprog1beadando1/public/images/gallery/StewieGriffin/sniper.jpg", altText: "Stewie Griffin with sniper"},
     
 ]
 

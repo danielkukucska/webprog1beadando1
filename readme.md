@@ -1,10 +1,10 @@
 # Kukucska Dániel (sqabsb)
 
-Webprogramozás I. tantárgy első beadandó
+Webprogramozás%20I. tantárgy első beadandó
 
 ## Fájlstruktúra
     .
-    ├── assets                  # statikus fájlok
+    ├── public                  # statikus fájlok
     │   ├── fonts               # betűtípusok
     │   ├── images              # képek
     │   └── styles              # css stíluslapok
