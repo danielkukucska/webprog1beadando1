@@ -1,85 +1,85 @@
 :root {
-  --bs-danger-color: #dc3545;
+    --bs-danger-color: #dc3545;
 }
 
 .iframe-container {
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%;
-  height: 0;
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
 }
 .iframe-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .pagination-nav {
-  display: grid;
-  grid-template-rows: auto 1fr;
-  grid-template-columns: 1fr repeat(3, auto) 1fr;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr repeat(3, auto) 1fr;
 
-  justify-content: center;
+    justify-content: center;
 }
 
 .pagination-nav > label {
-  grid-row: 2/3;
-  cursor: pointer;
-  min-width: 2em;
-  text-align: center;
-  border: 2px solid var(--bs-danger-color);
-  border-radius: 3px;
+    grid-row: 2/3;
+    cursor: pointer;
+    min-width: 2em;
+    text-align: center;
+    border: 2px solid var(--bs-danger-color);
+    border-radius: 3px;
 }
 
 .pagination-nav > label:hover {
-  /* background-color: rgba(var(--bs-danger-color), 0.7); */
-  background-color: var(--bs-danger-color);
-  opacity: 0.8;
-  color: white;
+    /* background-color: rgba(var(--bs-danger-color), 0.7); */
+    background-color: var(--bs-danger-color);
+    opacity: 0.8;
+    color: white;
 }
 
 .pagination-nav > label {
-  margin: auto;
+    margin: auto;
 }
 .pagination-nav > label:first-of-type {
-  margin-left: auto;
-  margin-right: 0;
+    margin-left: auto;
+    margin-right: 0;
 }
 
 .pagination-nav > label:last-of-type {
-  margin-right: auto;
-  margin-left: 0;
+    margin-right: auto;
+    margin-left: 0;
 }
 .pagination-nav input {
-  display: none;
+    display: none;
 }
 
 .pagination-nav ol {
-  grid-row: 1/2;
-  grid-column: 1/-1;
+    grid-row: 1/2;
+    grid-column: 1/-1;
 }
 
-input[id^="page_"]:checked + label {
-  background-color: var(--bs-danger-color);
-  border-color: var(--bs-danger-color);
-  color: white;
+input[id^='page_']:checked + label {
+    background-color: var(--bs-danger-color);
+    border-color: var(--bs-danger-color);
+    color: white;
 }
 
-[class^="page_"] {
-  display: none;
+[class^='page_'] {
+    display: none;
 }
-input[id^="page_1"]:checked ~ .page_1 {
-  display: flex;
-}
-
-input[id^="page_2"]:checked ~ .page_2 {
-  display: flex;
+input[id^='page_1']:checked ~ .page_1 {
+    display: flex;
 }
 
-input[id^="page_3"]:checked ~ .page_3 {
-  display: flex;
+input[id^='page_2']:checked ~ .page_2 {
+    display: flex;
+}
+
+input[id^='page_3']:checked ~ .page_3 {
+    display: flex;
 }
 
 /* input[id^="page_2"]:checked ~ div{
@@ -87,10 +87,10 @@ input[id^="page_3"]:checked ~ .page_3 {
   } */
 
 .page-item * {
-  color: var(--bs-danger-color);
-  cursor: pointer;
+    color: var(--bs-danger-color);
+    cursor: pointer;
 }
 
 .page-item *:hover {
-  color: var(--bs-danger-color);
+    color: var(--bs-danger-color);
 }

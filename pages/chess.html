@@ -1,305 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Kukucska Dániel" />
+        <meta name="description" content="Webdevelopment I. - First assessment" />
+        <title>Chess</title>
+        <link rel="icon" type="image/x-icon" href="/webprog1beadando1/public/images/favicon-32x32.png" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+            crossorigin="anonymous"
+        />
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+            crossorigin="anonymous"
+            defer
+        ></script>
+        <link rel="stylesheet" href="/webprog1beadando1/public/styles/main.css" />
+        <link rel="stylesheet" href="/webprog1beadando1/public/styles/chess.css" />
+    </head>
 
-    <meta name="author" content="Kukucska Dániel" />
-    <meta name="description" content="Webdevelopment I. - First assessment" />
-    <title>Chess</title>
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="/webprog1beadando1/public/images/favicon-32x32.png"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-      crossorigin="anonymous"
-      defer
-    ></script>
-    <link rel="stylesheet" href="/webprog1beadando1/public/styles/main.css" />
-    <link rel="stylesheet" href="/webprog1beadando1/public/styles/chess.css" />
-  </head>
+    <body>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a href="/webprog1beadando1" class="navbar-brand">Daniel Kukucska</a>
+                <button class="btn btn-dark navbar-toggler border-3 px-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-start-md bg-dark d-flex align-items-md-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+                    <div class="offcanvas-header d-flex d-md-none">
+                        <h5 class="offcanvas-title text-white" id="offcanvasLabel">Daniel Kukucska</h5>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="/webprog1beadando1/" class="nav-link">
+                                    <img class="d-md-block" src="/webprog1beadando1/public/images/icons/home.svg" alt="Home icon" />
+                                    Home
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/webprog1beadando1/pages/resume.html" class="nav-link">
+                                    <img class="d-md-block" src="/webprog1beadando1/public/images/icons/resume.svg" alt="Resume icon" />
+                                    Resume
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/webprog1beadando1/pages/subjects.html" class="nav-link">
+                                    <img class="d-md-block" src="/webprog1beadando1/public/images/icons/subjects.svg" alt="Subjects icon" />
+                                    Subjects
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/webprog1beadando1/pages/calendar.html" class="nav-link">
+                                    <img class="d-md-block" src="/webprog1beadando1/public/images/icons/calendar.svg" alt="Calendar icon" />
+                                    Calendar
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="/webprog1beadando1/pages/gallery" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img class="d-md-block" src="/webprog1beadando1/public/images/icons/gallery.svg" alt="Gallery icon" />
+                                    Gallery
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li>
+                                        <a class="dropdown-item" href="/webprog1beadando1/pages/gallery/PeterGriffin">Peter Griffin</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="/webprog1beadando1/pages/gallery/StewieGriffin">Stewie Griffin</a>
+                                    </li>
+                                    <li><hr class="dropdown-divider" /></li>
+                                    <li>
+                                        <a class="dropdown-item" href="/webprog1beadando1/pages/gallery">All</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/webprog1beadando1/pages/videos.html" class="nav-link">
+                                    <img class="d-md-block" src="/webprog1beadando1/public/images/icons/videos.svg" alt="Videos icon" />
+                                    Videos
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link active">
+                                    <img class="d-md-block" src="/webprog1beadando1/public/images/icons/chess.svg" alt="Chess icon" />
+                                    Chess
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
 
-  <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <div class="container-fluid">
-        <a href="/webprog1beadando1" class="navbar-brand">Daniel Kukucska</a>
-        <button
-          class="btn btn-dark navbar-toggler border-3 px-2"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvas"
-          aria-controls="offcanvas"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="offcanvas offcanvas-start-md bg-dark d-flex align-items-md-end"
-          tabindex="-1"
-          id="offcanvas"
-          aria-labelledby="offcanvasLabel"
-        >
-          <div class="offcanvas-header d-flex d-md-none">
-            <h5 class="offcanvas-title text-white" id="offcanvasLabel">
-              Daniel Kukucska
-            </h5>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a href="/webprog1beadando1/" class="nav-link">
-                  <img class="d-md-block" src="/webprog1beadando1/public/images/icons/home.svg" alt="Home icon">
-                  Home
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="/webprog1beadando1/pages/resume.html" class="nav-link">
-                  <img class="d-md-block" src="/webprog1beadando1/public/images/icons/resume.svg" alt="Resume icon">
-                  Resume
-                </a>
-              </li>
-              <li class="nav-item">
-                <a
-                  href="/webprog1beadando1/pages/subjects.html"
-                  class="nav-link"
-                >
-                  <img class="d-md-block" src="/webprog1beadando1/public/images/icons/subjects.svg" alt="Subjects icon">
-                  Subjects
-                </a>
-              </li>
-              <li class="nav-item">
-                <a
-                  href="/webprog1beadando1/pages/calendar.html"
-                  class="nav-link"
-                >
-                <img class="d-md-block" src="/webprog1beadando1/public/images/icons/calendar.svg" alt="Calendar icon">
-                  Calendar
-                </a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="/webprog1beadando1/pages/gallery"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                 <img class="d-md-block" src="/webprog1beadando1/public/images/icons/gallery.svg" alt="Gallery icon">
-                  Gallery
-                </a>
-                <ul class="dropdown-menu dropdown-menu-dark">
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      href="/webprog1beadando1/pages/gallery/PeterGriffin"
-                      >Peter Griffin</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      href="/webprog1beadando1/pages/gallery/StewieGriffin"
-                      >Stewie Griffin</a
-                    >
-                  </li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      href="/webprog1beadando1/pages/gallery"
-                      >All</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a href="/webprog1beadando1/pages/videos.html" class="nav-link">
-                  <img class="d-md-block" src="/webprog1beadando1/public/images/icons/videos.svg" alt="Videos icon">
-                  Videos
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link active">
-                 <img class="d-md-block" src="/webprog1beadando1/public/images/icons/chess.svg" alt="Chess icon">
-                  Chess
-                </a>
-              </li>
+        <main class="board-container">
+            <div class="board">
+                <div class="board-outer-top">
+                    <div>a</div>
+                    <div>b</div>
+                    <div>c</div>
+                    <div>d</div>
+                    <div>e</div>
+                    <div>f</div>
+                    <div>g</div>
+                    <div>h</div>
+                </div>
+                <div class="board-outer-right">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                    <div>6</div>
+                    <div>7</div>
+                    <div>8</div>
+                </div>
+                <div class="board-outer-bottom">
+                    <div>a</div>
+                    <div>b</div>
+                    <div>c</div>
+                    <div>d</div>
+                    <div>e</div>
+                    <div>f</div>
+                    <div>g</div>
+                    <div>h</div>
+                </div>
+                <div class="board-outer-left">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                    <div>6</div>
+                    <div>7</div>
+                    <div>8</div>
+                </div>
+                <div class="board-playground">
+                    <div class="board-row">
+                        <div class="board-cell board-cell-dark"></div>
+                        <div class="board-cell board-cell-light"></div>
+                        <div class="board-cell board-cell-dark"></div>
+                        <div class="board-cell board-cell-light"></div>
+                        <div class="board-cell board-cell-dark"></div>
+                        <div class="board-cell board-cell-light"></div>
+                        <div class="board-cell board-cell-dark"></div>
+                        <div class="board-cell board-cell-light"></div>
+                    </div>
+
+                    <div class="board-row">
+                        <div class="board-cell board-cell-light"></div>
+                        <div class="board-cell board-cell-dark"></div>
+                        <div class="board-cell board-cell-light"></div>
+                        <div class="board-cell board-cell-dark"></div>
+                        <div class="board-cell board-cell-light"></div>
+                        <div class="board-cell board-cell-dark"></div>
+                        <div class="board-cell board-cell-light"></div>
+                        <div class="board-cell board-cell-dark"></div>
+                    </div>
+
+                    <div class="board-row">
+                        <div class="board-cell board-cell-dark"></div>
+                        <div class="board-cell board-cell-light"></div>
+                        <div class="board-cell board-cell-dark"></div>
+                        <div class="board-cell board-cell-light"></div>
+                        <div class="board-cell board-cell-dark"></div>
+                        <div class="board-cell board-cell-light"></div>
+                        <div class="board-cell board-cell-dark"></div>
+                        <div class="board-cell board-cell-light"></div>
+                    </div>
+
+                    <div class="board-row">
+                        <div class="board-cell board-cell-light"></div>
+                        <div class="board-cell board-cell-dark"></div>
+                        <div class="board-cell board-cell-light"></div>
+                        <div class="board-cell board-cell-dark"></div>
+                        <div class="board-cell board-cell-light"></div>
+                        <div class="board-cell board-cell-dark"></div>
+                        <div class="board-cell board-cell-light"></div>
+                        <div class="board-cell board-cell-dark"></div>
+                    </div>
+
+                    <div class="board-row">
+                        <div class="board-cell board-cell-dark"></div>
+                        <div class="board-cell board-cell-light"></div>
+                        <div class="board-cell board-cell-dark"></div>
+                        <div class="board-cell board-cell-light"></div>
+                        <div class="board-cell board-cell-dark"></div>
+                        <div class="board-cell board-cell-light"></div>
+                        <div class="board-cell board-cell-dark"></div>
+                        <div class="board-cell board-cell-light"></div>
+                    </div>
+
+                    <div class="board-row">
+                        <div class="board-cell board-cell-light"></div>
+                        <div class="board-cell board-cell-dark"></div>
+                        <div class="board-cell board-cell-light"></div>
+                        <div class="board-cell board-cell-dark"></div>
+                        <div class="board-cell board-cell-light"></div>
+                        <div class="board-cell board-cell-dark"></div>
+                        <div class="board-cell board-cell-light"></div>
+                        <div class="board-cell board-cell-dark"></div>
+                    </div>
+
+                    <div class="board-row">
+                        <div class="board-cell board-cell-dark"></div>
+                        <div class="board-cell board-cell-light"></div>
+                        <div class="board-cell board-cell-dark"></div>
+                        <div class="board-cell board-cell-light"></div>
+                        <div class="board-cell board-cell-dark"></div>
+                        <div class="board-cell board-cell-light"></div>
+                        <div class="board-cell board-cell-dark"></div>
+                        <div class="board-cell board-cell-light"></div>
+                    </div>
+
+                    <div class="board-row">
+                        <div class="board-cell board-cell-light"></div>
+                        <div class="board-cell board-cell-dark"></div>
+                        <div class="board-cell board-cell-light"></div>
+                        <div class="board-cell board-cell-dark"></div>
+                        <div class="board-cell board-cell-light"></div>
+                        <div class="board-cell board-cell-dark"></div>
+                        <div class="board-cell board-cell-light"></div>
+                        <div class="board-cell board-cell-dark"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="container d-flex flex-wrap justify-content-between align-items-center my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <span class="md-0 text-muted">&copy; 2022, Daniel Kukucska</span>
+            </div>
+
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3">
+                    <a class="text-muted" href="mailto:daniel.kukucska.txt@gmail.com?Subject=Webprogramozás%20I." target="_blank">
+                        <img src="/webprog1beadando1/public/images/icons/envelope.svg" alt="Envelope icon" />
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="text-muted" href="https://github.com/danielkukucska" target="_blank">
+                        <img src="/webprog1beadando1/public/images/icons/github.svg" alt="GitHub icon" />
+                    </a>
+                </li>
             </ul>
-          </div>
-        </div>
-      </div>
-    </nav>
-
-    <main class="board-container">
-      <div class="board">
-        <div class="board-outer-top">
-          <div>a</div>
-          <div>b</div>
-          <div>c</div>
-          <div>d</div>
-          <div>e</div>
-          <div>f</div>
-          <div>g</div>
-          <div>h</div>
-        </div>
-        <div class="board-outer-right">
-          <div>1</div>
-          <div>2</div>
-          <div>3</div>
-          <div>4</div>
-          <div>5</div>
-          <div>6</div>
-          <div>7</div>
-          <div>8</div>
-        </div>
-        <div class="board-outer-bottom">
-          <div>a</div>
-          <div>b</div>
-          <div>c</div>
-          <div>d</div>
-          <div>e</div>
-          <div>f</div>
-          <div>g</div>
-          <div>h</div>
-        </div>
-        <div class="board-outer-left">
-          <div>1</div>
-          <div>2</div>
-          <div>3</div>
-          <div>4</div>
-          <div>5</div>
-          <div>6</div>
-          <div>7</div>
-          <div>8</div>
-        </div>
-        <div class="board-playground">
-          <div class="board-row">
-            <div class="board-cell board-cell-dark"></div>
-            <div class="board-cell board-cell-light"></div>
-            <div class="board-cell board-cell-dark"></div>
-            <div class="board-cell board-cell-light"></div>
-            <div class="board-cell board-cell-dark"></div>
-            <div class="board-cell board-cell-light"></div>
-            <div class="board-cell board-cell-dark"></div>
-            <div class="board-cell board-cell-light"></div>
-          </div>
-
-          <div class="board-row">
-            <div class="board-cell board-cell-light"></div>
-            <div class="board-cell board-cell-dark"></div>
-            <div class="board-cell board-cell-light"></div>
-            <div class="board-cell board-cell-dark"></div>
-            <div class="board-cell board-cell-light"></div>
-            <div class="board-cell board-cell-dark"></div>
-            <div class="board-cell board-cell-light"></div>
-            <div class="board-cell board-cell-dark"></div>
-          </div>
-
-          <div class="board-row">
-            <div class="board-cell board-cell-dark"></div>
-            <div class="board-cell board-cell-light"></div>
-            <div class="board-cell board-cell-dark"></div>
-            <div class="board-cell board-cell-light"></div>
-            <div class="board-cell board-cell-dark"></div>
-            <div class="board-cell board-cell-light"></div>
-            <div class="board-cell board-cell-dark"></div>
-            <div class="board-cell board-cell-light"></div>
-          </div>
-
-          <div class="board-row">
-            <div class="board-cell board-cell-light"></div>
-            <div class="board-cell board-cell-dark"></div>
-            <div class="board-cell board-cell-light"></div>
-            <div class="board-cell board-cell-dark"></div>
-            <div class="board-cell board-cell-light"></div>
-            <div class="board-cell board-cell-dark"></div>
-            <div class="board-cell board-cell-light"></div>
-            <div class="board-cell board-cell-dark"></div>
-          </div>
-
-          <div class="board-row">
-            <div class="board-cell board-cell-dark"></div>
-            <div class="board-cell board-cell-light"></div>
-            <div class="board-cell board-cell-dark"></div>
-            <div class="board-cell board-cell-light"></div>
-            <div class="board-cell board-cell-dark"></div>
-            <div class="board-cell board-cell-light"></div>
-            <div class="board-cell board-cell-dark"></div>
-            <div class="board-cell board-cell-light"></div>
-          </div>
-
-          <div class="board-row">
-            <div class="board-cell board-cell-light"></div>
-            <div class="board-cell board-cell-dark"></div>
-            <div class="board-cell board-cell-light"></div>
-            <div class="board-cell board-cell-dark"></div>
-            <div class="board-cell board-cell-light"></div>
-            <div class="board-cell board-cell-dark"></div>
-            <div class="board-cell board-cell-light"></div>
-            <div class="board-cell board-cell-dark"></div>
-          </div>
-
-          <div class="board-row">
-            <div class="board-cell board-cell-dark"></div>
-            <div class="board-cell board-cell-light"></div>
-            <div class="board-cell board-cell-dark"></div>
-            <div class="board-cell board-cell-light"></div>
-            <div class="board-cell board-cell-dark"></div>
-            <div class="board-cell board-cell-light"></div>
-            <div class="board-cell board-cell-dark"></div>
-            <div class="board-cell board-cell-light"></div>
-          </div>
-
-          <div class="board-row">
-            <div class="board-cell board-cell-light"></div>
-            <div class="board-cell board-cell-dark"></div>
-            <div class="board-cell board-cell-light"></div>
-            <div class="board-cell board-cell-dark"></div>
-            <div class="board-cell board-cell-light"></div>
-            <div class="board-cell board-cell-dark"></div>
-            <div class="board-cell board-cell-light"></div>
-            <div class="board-cell board-cell-dark"></div>
-          </div>
-        </div>
-      </div>
-    </main>
-
-    <footer
-      class="container d-flex flex-wrap justify-content-between align-items-center my-4 border-top"
-    >
-      <div class="col-md-4 d-flex align-items-center">
-        <span class="md-0 text-muted">&copy; 2022, Daniel Kukucska</span>
-      </div>
-
-      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-        <li class="ms-3">
-          <a
-            class="text-muted"
-            href="mailto:daniel.kukucska.txt@gmail.com?Subject=Webprogramozás%20I."
-            target="_blank"
-          >
-                         <img src="/webprog1beadando1/public/images/icons/envelope.svg" alt="Envelope icon">
-          </a>
-        </li>
-        <li class="ms-3">
-          <a
-            class="text-muted"
-            href="https://github.com/danielkukucska"
-            target="_blank"
-          >
-            <img src="/webprog1beadando1/public/images/icons/github.svg" alt="GitHub icon">
-          </a>
-        </li>
-      </ul>
-    </footer>
-  </body>
+        </footer>
+    </body>
 </html>

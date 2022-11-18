@@ -1,569 +1,357 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Kukucska Dániel" />
+        <meta name="description" content="Webdevelopment I. - First assessment" />
+        <title>Resume</title>
+        <link rel="icon" type="image/x-icon" href="/webprog1beadando1/public/images/favicon-32x32.png" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+            crossorigin="anonymous"
+        />
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+            crossorigin="anonymous"
+            defer
+        ></script>
+        <link rel="stylesheet" href="/webprog1beadando1/public/styles/main.css" />
+        <link rel="stylesheet" href="/webprog1beadando1/public/styles/resume.css" />
+    </head>
 
-    <meta name="author" content="Kukucska Dániel" />
-    <meta name="description" content="Webdevelopment I. - First assessment" />
-    <title>Resume</title>
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="/webprog1beadando1/public/images/favicon-32x32.png"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-      crossorigin="anonymous"
-      defer
-    ></script>
-    <link rel="stylesheet" href="/webprog1beadando1/public/styles/main.css" />
-    <link rel="stylesheet" href="/webprog1beadando1/public/styles/resume.css" />
-  </head>
+    <body class="d-flex flex-column justify-content-between min-vh-100">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a href="/webprog1beadando1" class="navbar-brand">Daniel Kukucska</a>
+                <button class="btn btn-dark navbar-toggler border-3 px-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-start-md bg-dark d-flex align-items-md-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+                    <div class="offcanvas-header d-flex d-md-none">
+                        <h5 class="offcanvas-title text-white" id="offcanvasLabel">Daniel Kukucska</h5>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="/webprog1beadando1/" class="nav-link">
+                                    <img class="d-md-block" src="/webprog1beadando1/public/images/icons/home.svg" alt="Home icon" />
+                                    Home
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link active">
+                                    <img class="d-md-block" src="/webprog1beadando1/public/images/icons/resume.svg" alt="Resume icon" />
+                                    Resume
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/webprog1beadando1/pages/subjects.html" class="nav-link">
+                                    <img class="d-md-block" src="/webprog1beadando1/public/images/icons/subjects.svg" alt="Subjects icon" />
+                                    Subjects
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/webprog1beadando1/pages/calendar.html" class="nav-link">
+                                    <img class="d-md-block" src="/webprog1beadando1/public/images/icons/calendar.svg" alt="Calendar icon" />
+                                    Calendar
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="/webprog1beadando1/pages/gallery" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img class="d-md-block" src="/webprog1beadando1/public/images/icons/gallery.svg" alt="Gallery icon" />
+                                    Gallery
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li>
+                                        <a class="dropdown-item" href="/webprog1beadando1/pages/gallery/PeterGriffin">Peter Griffin</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="/webprog1beadando1/pages/gallery/StewieGriffin">Stewie Griffin</a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider" />
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="/webprog1beadando1/pages/gallery">All</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/webprog1beadando1/pages/videos.html" class="nav-link">
+                                    <img class="d-md-block" src="/webprog1beadando1/public/images/icons/videos.svg" alt="Videos icon" />
+                                    Videos
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/webprog1beadando1/pages/chess.html" class="nav-link">
+                                    <img class="d-md-block" src="/webprog1beadando1/public/images/icons/chess.svg" alt="Chess icon" />
+                                    Chess
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
 
-  <body class="d-flex flex-column justify-content-between min-vh-100">
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <div class="container-fluid">
-        <a href="/webprog1beadando1" class="navbar-brand">Daniel Kukucska</a>
-        <button
-          class="btn btn-dark navbar-toggler border-3 px-2"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvas"
-          aria-controls="offcanvas"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="offcanvas offcanvas-start-md bg-dark d-flex align-items-md-end"
-          tabindex="-1"
-          id="offcanvas"
-          aria-labelledby="offcanvasLabel"
-        >
-          <div class="offcanvas-header d-flex d-md-none">
-            <h5 class="offcanvas-title text-white" id="offcanvasLabel">
-              Daniel Kukucska
-            </h5>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a href="/webprog1beadando1/" class="nav-link">
-                  <img class="d-md-block" src="/webprog1beadando1/public/images/icons/home.svg" alt="Home icon">
-                  <!-- <img class="bi bi-house-door d-md-block" src="/webprog1beadando1/public/images/icons/home.svg" alt="Home icon"> -->
-                  Home
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link active">
-                  <img class="d-md-block" src="/webprog1beadando1/public/images/icons/resume.svg" alt="Resume icon">
-                  Resume
-                </a>
-              </li>
-              <li class="nav-item">
-                <a
-                  href="/webprog1beadando1/pages/subjects.html"
-                  class="nav-link"
-                >
-                  <img class="d-md-block" src="/webprog1beadando1/public/images/icons/subjects.svg" alt="Subjects icon">
-                  Subjects
-                </a>
-              </li>
-              <li class="nav-item">
-                <a
-                  href="/webprog1beadando1/pages/calendar.html"
-                  class="nav-link"
-                >
-                <img class="d-md-block" src="/webprog1beadando1/public/images/icons/calendar.svg" alt="Calendar icon">
-                  Calendar
-                </a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="/webprog1beadando1/pages/gallery"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                 <img class="d-md-block" src="/webprog1beadando1/public/images/icons/gallery.svg" alt="Gallery icon">
-                  Gallery
-                </a>
-                <ul class="dropdown-menu dropdown-menu-dark">
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      href="/webprog1beadando1/pages/gallery/PeterGriffin"
-                      >Peter Griffin</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      href="/webprog1beadando1/pages/gallery/StewieGriffin"
-                      >Stewie Griffin</a
-                    >
-                  </li>
-                  <li>
-                    <hr class="dropdown-divider" />
-                  </li>
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      href="/webprog1beadando1/pages/gallery"
-                      >All</a
-                    >
-                  </li>
+        <header class="bg-primary bg-gradient text-white pb-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 text-left text-md-center mb-3">
+                        <img class="rounded-circle img-fluid" src="/webprog1beadando1/public/images/Daniel_Kukucska.jpg" alt="Profile Photo" />
+                    </div>
+                    <div class="col-md-9">
+                        <h1>Daniel Kukucska</h1>
+
+                        <h5>Frontend Developer</h5>
+                        <section>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h5 class="m-0">Date of birth:</h5>
+                                <time datetime="1997-09-23">23 Sep 1997</time>
+                            </div>
+                            <div class=""></div>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h5 class="m-0">Nationality:</h5>
+                                <span>Hungarian</span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h5 class="m-0">Gender:</h5>
+                                <span>Male</span>
+                            </div>
+                        </section>
+                    </div>
+                    <p class="border-top pt-3 text">
+                        Experienced Mathematics Teacher with a demonstrated history of working in the education management industry. Skilled in Microsoft Excel, Microsoft Word, Public Speaking,
+                        Microsoft Office, and Mathematics. In the past years started to work with SharePoint Online, Power Platform and React with TypeScript. Looking forward to dive deeper into
+                        frontend development.
+                    </p>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <nav class="navbar navbar-dark bg-dark">
+                <ul class="navbar-nav d-flex flex-md-row align-items-center justify-content-around w-100">
+                    <li class="nav-item">
+                        <a href="#workExperience" class="nav-link"> Work Experience </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#education" class="nav-link"> Education </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#digitalSkills" class="nav-link"> Digital Skills </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#languages" class="nav-link"> Languages </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link"> Contact </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/webprog1beadando1/public/files/DanielKukucska_CV.pdf" download class="nav-link">Download CV</a>
+                    </li>
                 </ul>
-              </li>
-              <li class="nav-item">
-                <a href="/webprog1beadando1/pages/videos.html" class="nav-link">
-                  <img class="d-md-block" src="/webprog1beadando1/public/images/icons/videos.svg" alt="Videos icon">
-                  Videos
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="/webprog1beadando1/pages/chess.html" class="nav-link">
-                 <img class="d-md-block" src="/webprog1beadando1/public/images/icons/chess.svg" alt="Chess icon">
-                  Chess
-                </a>
-              </li>
+            </nav>
+            <div class="container mt-3">
+                <div class="row">
+                    <div class="col-md mb-3">
+                        <h2 class="mb-3 anchor" id="workExperience">Work Experience</h2>
+                        <ul class="list-group">
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">TEACHER</div>
+                                    <span> Logischool Kft. </span>
+                                    <p>Teaching the basics of programming for primary school students. We used Scratch in the weekly lectures and in summer camps.</p>
+                                </div>
+                                <span class="badge bg-primary rounded-pill">2016-2017</span>
+                            </li>
+
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">BUSINESS ANALYST</div>
+                                    <span> Sberbank Zrt. </span>
+                                    <p>Working as an intern in the business application development department. My assigned applications were related to finance and legal departments.</p>
+                                </div>
+                                <span class="badge bg-primary rounded-pill">2018-2019</span>
+                            </li>
+
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">IT CONSULTANT</div>
+                                    <span> CollabIT Zrt. </span>
+                                    <p>At first, my main focus was SharePoint Online, Project Online and Power Platform. Since 2021, I am also working as a frontend developer.</p>
+                                </div>
+                                <span class="badge bg-primary rounded-pill">2016-2017</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md mb-3">
+                        <h2 class="mb-3 anchor" id="education">Education</h2>
+                        <ul class="list-group">
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">GRADUTAION CERTIFICATE</div>
+                                    <span> Török Ignác High School </span>
+                                </div>
+                                <span class="badge bg-primary rounded-pill">2009-2017</span>
+                            </li>
+
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">BUSINESS INFORMATICS BSC</div>
+                                    <span> Corvinus University of Budapest </span>
+                                </div>
+                                <span class="badge bg-primary rounded-pill">2017-2022</span>
+                            </li>
+
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">SOFTWARE ENGINEER</div>
+                                    <span> Eszterházy Károly Catholic University </span>
+                                </div>
+                                <span class="badge bg-primary rounded-pill">2022-Current</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <h2 class="mb-3 col-12 anchor" id="digitalSkills">Digital Skills</h2>
+                    <div class="col-md-6 mb-3">
+                        <h4>Frontend development</h4>
+                        <hr />
+                        <div class="progress mb-4" style="height: 25px">
+                            <div class="progress-bar bg-primary text-left pl-2" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">HTML</div>
+                        </div>
+                        <div class="progress mb-4" style="height: 25px">
+                            <div class="progress-bar bg-primary text-left pl-2" role="progressbar" style="width: 87%" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100">CSS/SCSS</div>
+                        </div>
+                        <div class="progress mb-4" style="height: 25px">
+                            <div class="progress-bar bg-primary text-left pl-2" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                JavaScript/Typescript
+                            </div>
+                        </div>
+                        <div class="progress mb-4" style="height: 25px">
+                            <div class="progress-bar bg-primary text-left pl-2" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">React JS</div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <h4>Other development related</h4>
+                        <hr />
+                        <div class="progress mb-4" style="height: 25px">
+                            <div class="progress-bar bg-primary text-left pl-2" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">SQL</div>
+                        </div>
+                        <div class="progress mb-4" style="height: 25px">
+                            <div class="progress-bar bg-primary text-left pl-2" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">Git</div>
+                        </div>
+                        <div class="progress mb-4" style="height: 25px">
+                            <div class="progress-bar bg-primary text-left pl-2" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">Node JS/ Express</div>
+                        </div>
+                        <div class="progress mb-4" style="height: 25px">
+                            <div class="progress-bar bg-primary text-left pl-2" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Azure DeOps</div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <h4>M365</h4>
+                        <hr />
+                        <div class="progress mb-4" style="height: 25px">
+                            <div class="progress-bar bg-primary text-left pl-2" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                Microsoft SharePoint Online
+                            </div>
+                        </div>
+                        <div class="progress mb-4" style="height: 25px">
+                            <div class="progress-bar bg-primary text-left pl-2" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">Power Platform</div>
+                        </div>
+                        <div class="progress mb-4" style="height: 25px">
+                            <div class="progress-bar bg-primary text-left pl-2" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                Microsoft Project Online
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md mb-3">
+                        <h2 class="mb-3 anchor" id="languages">Languages</h2>
+
+                        <ul class="list-group">
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">HUNGARIAN</div>
+                                </div>
+                                <span class="badge bg-primary rounded-pill">NATIVE</span>
+                            </li>
+
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">ENGLISH</div>
+                                </div>
+                                <span class="badge bg-primary rounded-pill">B2-C1</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md mb-3">
+                        <h2 class="mb-3 anchor" id="contact">Contact</h2>
+
+                        <ul class="list-group">
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">Email:</div>
+                                    <a class="text-muted" href="mailto:daniel.kukucska.txt@gmail.com?Subject=Webprogramozás%20I." target="_blank"> daniel.kukucska.txt@gmail.com </a>
+                                </div>
+                                <span class="badge bg-primary rounded-pill">
+                                    <img src="/webprog1beadando1/public/images/icons/envelope.svg" alt="Envelope icon" />
+                                </span>
+                            </li>
+
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">GitHub:</div>
+                                    <a class="text-muted" href="https://github.com/danielkukucska" target="_blank"> github.com/danielkukucska </a>
+                                </div>
+                                <span class="badge bg-primary rounded-pill">
+                                    <img src="/webprog1beadando1/public/images/icons/github.svg" alt="GitHub icon" />
+                                </span>
+                            </li>
+
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">Phone:</div>
+                                    <a class="text-muted" href="tel:+36-06-123456789" target="_blank"> +36-06-123456789 </a>
+                                </div>
+                                <span class="badge bg-primary rounded-pill">
+                                    <img src="/webprog1beadando1/public/images/icons/phone.svg" alt="Phone icon" />
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="container d-flex flex-wrap justify-content-between align-items-center my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <span class="md-0 text-muted">&copy; 2022, Daniel Kukucska</span>
+            </div>
+
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3">
+                    <a class="text-muted" href="mailto:daniel.kukucska.txt@gmail.com?Subject=Webprogramozás%20I." target="_blank">
+                        <img src="/webprog1beadando1/public/images/icons/envelope.svg" alt="Envelope icon" />
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="text-muted" href="https://github.com/danielkukucska" target="_blank">
+                        <img src="/webprog1beadando1/public/images/icons/github.svg" alt="GitHub icon" />
+                    </a>
+                </li>
             </ul>
-          </div>
-        </div>
-      </div>
-    </nav>
-
-    <header class="bg-primary bg-gradient text-white pb-3">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 text-left text-md-center mb-3">
-            <img
-              class="rounded-circle img-fluid"
-              src="/webprog1beadando1/public/images/Daniel_Kukucska.jpg"
-              alt="Profile Photo"
-            />
-          </div>
-          <div class="col-md-9">
-            <h1>Daniel Kukucska</h1>
-
-            <h5>Frontend Developer</h5>
-            <section>
-              <div class="d-flex align-items-center justify-content-between">
-                <h5 class="m-0">Date of birth:</h5>
-                <time datetime="1997-09-23">23 Sep 1997</time>
-              </div>
-              <div class=""></div>
-              <div class="d-flex align-items-center justify-content-between">
-                <h5 class="m-0">Nationality:</h5>
-                <span>Hungarian</span>
-              </div>
-              <div class="d-flex align-items-center justify-content-between">
-                <h5 class="m-0">Gender:</h5>
-                <span>Male</span>
-              </div>
-            </section>
-          </div>
-          <p class="border-top pt-3 text">
-            Experienced Mathematics Teacher with a demonstrated history of
-            working in the education management industry. Skilled in Microsoft
-            Excel, Microsoft Word, Public Speaking, Microsoft Office, and
-            Mathematics. In the past years started to work with SharePoint
-            Online, Power Platform and React with TypeScript. Looking forward to
-            dive deeper into frontend development.
-          </p>
-        </div>
-      </div>
-    </header>
-
-    <main>
-      <nav class="navbar navbar-dark bg-dark">
-        <ul
-          class="navbar-nav d-flex flex-md-row align-items-center justify-content-around w-100"
-        >
-          <li class="nav-item">
-            <a href="#workExperience" class="nav-link"> Work Experience </a>
-          </li>
-          <li class="nav-item">
-            <a href="#education" class="nav-link"> Education </a>
-          </li>
-          <li class="nav-item">
-            <a href="#digitalSkills" class="nav-link"> Digital Skills </a>
-          </li>
-          <li class="nav-item">
-            <a href="#languages" class="nav-link"> Languages </a>
-          </li>
-          <li class="nav-item">
-            <a href="#contact" class="nav-link"> Contact </a>
-          </li>
-          <li class="nav-item">
-            <a
-              href="/webprog1beadando1/public/files/DanielKukucska_CV.pdf"
-              download
-              class="nav-link"
-              >Download CV</a
-            >
-          </li>
-        </ul>
-      </nav>
-      <div class="container mt-3">
-        <div class="row">
-          <div class="col-md mb-3">
-            <h2 class="mb-3 anchor" id="workExperience">Work Experience</h2>
-            <ul class="list-group">
-              <li
-                class="list-group-item d-flex justify-content-between align-items-start"
-              >
-                <div class="ms-2 me-auto">
-                  <div class="fw-bold">TEACHER</div>
-                  <span> Logischool Kft. </span>
-                  <p>
-                    Teaching the basics of programming for primary school
-                    students. We used Scratch in the weekly lectures and in
-                    summer camps.
-                  </p>
-                </div>
-                <span class="badge bg-primary rounded-pill">2016-2017</span>
-              </li>
-
-              <li
-                class="list-group-item d-flex justify-content-between align-items-start"
-              >
-                <div class="ms-2 me-auto">
-                  <div class="fw-bold">BUSINESS ANALYST</div>
-                  <span> Sberbank Zrt. </span>
-                  <p>
-                    Working as an intern in the business application development
-                    department. My assigned applications were related to finance
-                    and legal departments.
-                  </p>
-                </div>
-                <span class="badge bg-primary rounded-pill">2018-2019</span>
-              </li>
-
-              <li
-                class="list-group-item d-flex justify-content-between align-items-start"
-              >
-                <div class="ms-2 me-auto">
-                  <div class="fw-bold">IT CONSULTANT</div>
-                  <span> CollabIT Zrt. </span>
-                  <p>
-                    At first, my main focus was SharePoint Online, Project
-                    Online and Power Platform. Since 2021, I am also working as
-                    a frontend developer.
-                  </p>
-                </div>
-                <span class="badge bg-primary rounded-pill">2016-2017</span>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md mb-3">
-            <h2 class="mb-3 anchor" id="education">Education</h2>
-            <ul class="list-group">
-              <li
-                class="list-group-item d-flex justify-content-between align-items-start"
-              >
-                <div class="ms-2 me-auto">
-                  <div class="fw-bold">GRADUTAION CERTIFICATE</div>
-                  <span> Török Ignác High School </span>
-                </div>
-                <span class="badge bg-primary rounded-pill">2009-2017</span>
-              </li>
-
-              <li
-                class="list-group-item d-flex justify-content-between align-items-start"
-              >
-                <div class="ms-2 me-auto">
-                  <div class="fw-bold">BUSINESS INFORMATICS BSC</div>
-                  <span> Corvinus University of Budapest </span>
-                </div>
-                <span class="badge bg-primary rounded-pill">2017-2022</span>
-              </li>
-
-              <li
-                class="list-group-item d-flex justify-content-between align-items-start"
-              >
-                <div class="ms-2 me-auto">
-                  <div class="fw-bold">SOFTWARE ENGINEER</div>
-                  <span> Eszterházy Károly Catholic University </span>
-                </div>
-                <span class="badge bg-primary rounded-pill">2022-Current</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="row">
-          <h2 class="mb-3 col-12 anchor" id="digitalSkills">Digital Skills</h2>
-          <div class="col-md-6 mb-3">
-            <h4>Frontend development</h4>
-            <hr />
-            <div class="progress mb-4" style="height: 25px">
-              <div
-                class="progress-bar bg-primary text-left pl-2"
-                role="progressbar"
-                style="width: 90%"
-                aria-valuenow="90"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              >
-                HTML
-              </div>
-            </div>
-            <div class="progress mb-4" style="height: 25px">
-              <div
-                class="progress-bar bg-primary text-left pl-2"
-                role="progressbar"
-                style="width: 87%"
-                aria-valuenow="87"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              >
-                CSS/SCSS
-              </div>
-            </div>
-            <div class="progress mb-4" style="height: 25px">
-              <div
-                class="progress-bar bg-primary text-left pl-2"
-                role="progressbar"
-                style="width: 90%"
-                aria-valuenow="90"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              >
-                JavaScript/Typescript
-              </div>
-            </div>
-            <div class="progress mb-4" style="height: 25px">
-              <div
-                class="progress-bar bg-primary text-left pl-2"
-                role="progressbar"
-                style="width: 80%"
-                aria-valuenow="80"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              >
-                React JS
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 mb-3">
-            <h4>Other development related</h4>
-            <hr />
-            <div class="progress mb-4" style="height: 25px">
-              <div
-                class="progress-bar bg-primary text-left pl-2"
-                role="progressbar"
-                style="width: 50%"
-                aria-valuenow="50"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              >
-                SQL
-              </div>
-            </div>
-            <div class="progress mb-4" style="height: 25px">
-              <div
-                class="progress-bar bg-primary text-left pl-2"
-                role="progressbar"
-                style="width: 80%"
-                aria-valuenow="80"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              >
-                Git
-              </div>
-            </div>
-            <div class="progress mb-4" style="height: 25px">
-              <div
-                class="progress-bar bg-primary text-left pl-2"
-                role="progressbar"
-                style="width: 60%"
-                aria-valuenow="60"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              >
-                Node JS/ Express
-              </div>
-            </div>
-            <div class="progress mb-4" style="height: 25px">
-              <div
-                class="progress-bar bg-primary text-left pl-2"
-                role="progressbar"
-                style="width: 50%"
-                aria-valuenow="50"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              >
-                Azure DeOps
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 mb-3">
-            <h4>M365</h4>
-            <hr />
-            <div class="progress mb-4" style="height: 25px">
-              <div
-                class="progress-bar bg-primary text-left pl-2"
-                role="progressbar"
-                style="width: 80%"
-                aria-valuenow="80"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              >
-                Microsoft SharePoint Online
-              </div>
-            </div>
-            <div class="progress mb-4" style="height: 25px">
-              <div
-                class="progress-bar bg-primary text-left pl-2"
-                role="progressbar"
-                style="width: 80%"
-                aria-valuenow="80"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              >
-                Power Platform
-              </div>
-            </div>
-            <div class="progress mb-4" style="height: 25px">
-              <div
-                class="progress-bar bg-primary text-left pl-2"
-                role="progressbar"
-                style="width: 70%"
-                aria-valuenow="70"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              >
-                Microsoft Project Online
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md mb-3">
-            <h2 class="mb-3 anchor" id="languages">Languages</h2>
-
-            <ul class="list-group">
-              <li
-                class="list-group-item d-flex justify-content-between align-items-start"
-              >
-                <div class="ms-2 me-auto">
-                  <div class="fw-bold">HUNGARIAN</div>
-                </div>
-                <span class="badge bg-primary rounded-pill">NATIVE</span>
-              </li>
-
-              <li
-                class="list-group-item d-flex justify-content-between align-items-start"
-              >
-                <div class="ms-2 me-auto">
-                  <div class="fw-bold">ENGLISH</div>
-                </div>
-                <span class="badge bg-primary rounded-pill">B2-C1</span>
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-md mb-3">
-            <h2 class="mb-3 anchor" id="contact">Contact</h2>
-
-            <ul class="list-group">
-              <li
-                class="list-group-item d-flex justify-content-between align-items-start"
-              >
-                <div class="ms-2 me-auto">
-                  <div class="fw-bold">Email:</div>
-                  <a
-                    class="text-muted"
-                    href="mailto:daniel.kukucska.txt@gmail.com?Subject=Webprogramozás%20I."
-                    target="_blank"
-                  >
-                    daniel.kukucska.txt@gmail.com
-                  </a>
-                </div>
-                <span class="badge bg-primary rounded-pill">
-                  <img src="/webprog1beadando1/public/images/icons/envelope.svg" alt="Envelope icon">
-                </span>
-              </li>
-
-              <li
-                class="list-group-item d-flex justify-content-between align-items-start"
-              >
-                <div class="ms-2 me-auto">
-                  <div class="fw-bold">GitHub:</div>
-                  <a
-                    class="text-muted"
-                    href="https://github.com/danielkukucska"
-                    target="_blank"
-                  >
-                    github.com/danielkukucska
-                  </a>
-                </div>
-                <span class="badge bg-primary rounded-pill">
-                  <img src="/webprog1beadando1/public/images/icons/github.svg" alt="GitHub icon">
-                </span>
-              </li>
-
-              <li
-                class="list-group-item d-flex justify-content-between align-items-start"
-              >
-                <div class="ms-2 me-auto">
-                  <div class="fw-bold">Phone:</div>
-                  <a
-                    class="text-muted"
-                    href="tel:+36-06-123456789"
-                    target="_blank"
-                  >
-                    +36-06-123456789
-                  </a>
-                </div>
-                <span class="badge bg-primary rounded-pill">
-                  <img src="/webprog1beadando1/public/images/icons/phone.svg" alt="Phone icon">
-                </span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </main>
-
-    <footer
-      class="container d-flex flex-wrap justify-content-between align-items-center my-4 border-top"
-    >
-      <div class="col-md-4 d-flex align-items-center">
-        <span class="md-0 text-muted">&copy; 2022, Daniel Kukucska</span>
-      </div>
-
-      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-        <li class="ms-3">
-          <a
-            class="text-muted"
-            href="mailto:daniel.kukucska.txt@gmail.com?Subject=Webprogramozás%20I."
-            target="_blank"
-          >
-                         <img src="/webprog1beadando1/public/images/icons/envelope.svg" alt="Envelope icon">
-          </a>
-        </li>
-        <li class="ms-3">
-          <a
-            class="text-muted"
-            href="https://github.com/danielkukucska"
-            target="_blank"
-          >
-            <img src="/webprog1beadando1/public/images/icons/github.svg" alt="GitHub icon">
-          </a>
-        </li>
-      </ul>
-    </footer>
-  </body>
+        </footer>
+    </body>
 </html>

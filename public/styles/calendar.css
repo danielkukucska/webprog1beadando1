@@ -1,11 +1,11 @@
 .calendarRow > div {
-  aspect-ratio: 1/1;
-  flex-basis: 14%;
+    aspect-ratio: 1/1;
+    flex-basis: 14%;
 }
 .calendarImg {
-  background-image: url("/webprog1beadando1/public/images/winter.jpg");
-  background-size: cover;
+    background-image: url('/webprog1beadando1/public/images/winter.jpg');
+    background-size: cover;
 }
 .calendarImg h2 {
-  font-size: 15rem;
+    font-size: 15rem;
 }
